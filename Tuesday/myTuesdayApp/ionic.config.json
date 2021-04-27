@@ -1,0 +1,7 @@
+{
+  "name": "myTuesdayApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
