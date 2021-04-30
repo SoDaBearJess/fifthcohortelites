@@ -1,17 +1,74 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      <h1 style="text-align: center;"> Skills</h1>
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-card>
+  <ion-item href="#" class="ion-activated">
+    
+    <ion-text slot="start">
+      <h4>Strength<br></h4>
+    </ion-text>
+    <ion-progress-bar id = "setBottom" value="0.9" ></ion-progress-bar>
+    <ion-img style="width: 40px; height: 40px;" src="../assets/Pictures/strength.png"></ion-img>
+    <ion-text slot="end">
+      <h4 style="text-align: center;">Level 40</h4>
+    </ion-text>
+  </ion-item>
 
-<ion-content [fullscreen]="true">
+  <ion-item href="#">
+    <ion-text slot="start">
+      <h4>Running</h4>
+    </ion-text>
+    <ion-progress-bar value="0.5" id = "setBottom"></ion-progress-bar>
+    <ion-img style="width: 40px; height: 40px;" src="../assets/Pictures/Shoes.png"></ion-img>
+    <ion-text slot="end">
+      <h4 style="text-align: center;">Level 37</h4>
+    </ion-text>
+  </ion-item>
+
+  <ion-item class="ion-activated">
+    <ion-text slot="start">
+      <h4>Cleaning</h4>
+    </ion-text>
+    <ion-progress-bar value="0.2" id = "setBottom"></ion-progress-bar>
+    <ion-img style="width: 40px; height: 40px;" src="../assets/Pictures/Cleaning.png"></ion-img>
+    <ion-text slot="end">
+      <h4 style="text-align: center;">Level 13</h4>
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-text slot="start">
+      <h4>Homework</h4>
+    </ion-text>
+    <ion-progress-bar value="0.1"id = "setBottom"></ion-progress-bar>
+    <ion-img style="width: 40px; height: 40px;" src="../assets/Pictures/strength.png"></ion-img>
+    <ion-text slot="end">
+      <h4 style="text-align: center;">Level 45</h4>
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-text slot="start">
+      <h4>Responsibility</h4>
+    </ion-text>
+    <ion-progress-bar value="0.24" id = "setBottom"></ion-progress-bar>
+    <ion-img style="width: 40px; height: 40px;" src="../assets/Pictures/Responsible.png"></ion-img>
+    <ion-text slot="end">
+      <h4 style="text-align: center;">Level 62</h4>
+    </ion-text>
+  </ion-item>
+</ion-card>
+<ion-content >
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large"> Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <app-explore-container name="Tab 3 page"></app-explore-container>
 </ion-content>
+<ion-button expand="block" style="width: 50%; align-self: center;">Add Skills</ion-button>
