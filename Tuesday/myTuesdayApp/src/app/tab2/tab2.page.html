@@ -7,26 +7,12 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-item>
-        <ion-checkbox color="dark"  slot="start"></ion-checkbox>
-        <ion-label>Go for run</ion-label>
-    </ion-item>
-    <ion-item>
-        <ion-checkbox color="dark"  slot="start"></ion-checkbox>
-        <ion-label>Wash the dishes</ion-label>
-    </ion-item>
-    <ion-item>
-        <ion-checkbox color="dark"  slot="start"></ion-checkbox>
-        <ion-label>Workout</ion-label>
-    </ion-item>
-    <ion-item>
-        <ion-checkbox color="dark"  slot="start"></ion-checkbox>
-        <ion-label>Mow the lawn</ion-label>
-    </ion-item>
-    <ion-item>
-        <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
-        <ion-label>Rick roll someone</ion-label>
-    </ion-item>
+  <app-quest-container checked=false quest="Finish the App"></app-quest-container>
+  <app-quest-container checked=false quest="For for run"></app-quest-container>
+  <app-quest-container checked=false quest="Wash the dishes"></app-quest-container>
+  <app-quest-container checked=false quest="Workout"></app-quest-container>
+  <app-quest-container checked=false quest="Mow the lawn"></app-quest-container>
+  <app-quest-container checked=true quest="Rick roll someone"></app-quest-container>
 </ion-content>
 <ion-button expand="block" style="width: 50%; align-self: center;">Add Quest</ion-button>
 
