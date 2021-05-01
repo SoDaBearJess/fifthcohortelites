@@ -8,9 +8,11 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { QuestContainerComponentModule } from '../quest-container/quest-container.module';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
+import { QuestModalModule } from '../quest-modal/quest-modal.module';
 
 @NgModule({
   imports: [
+    QuestModalModule,
     IonicModule,
     CommonModule,
     FormsModule,

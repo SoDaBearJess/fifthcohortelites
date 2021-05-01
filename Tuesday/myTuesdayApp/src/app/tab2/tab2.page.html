@@ -7,12 +7,13 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <app-quest-container checked=false quest="Finish the App"></app-quest-container>
-  <app-quest-container checked=false quest="For for run"></app-quest-container>
-  <app-quest-container checked=false quest="Wash the dishes"></app-quest-container>
-  <app-quest-container checked=false quest="Workout"></app-quest-container>
-  <app-quest-container checked=false quest="Mow the lawn"></app-quest-container>
-  <app-quest-container checked=true quest="Rick roll someone"></app-quest-container>
+  <ion-list>
+    <div *ngFor="let item of quests">
+      <app-quest-container [checked]="item.checked" [quest]="item.title"></app-quest-container>
+    </div>
+  </ion-list>
 </ion-content>
-<ion-button expand="block" style="width: 50%; align-self: center;">Add Quest</ion-button>
+
+
+<ion-button (click)="showModal()" expand="block" style="width: 50%; align-self: center;">Add Quest</ion-button>
 
