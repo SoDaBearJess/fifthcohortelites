@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-button (click)="close()">
+                <ion-icon slot="icon-only" name="close"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item style="width:300px; height:100px; position:absolute; left:50%; top:50%; margin-left:-150px; margin-top:-150px;">
+        <ion-label position="stacked">Enter the name of your Quest</ion-label>
+        <ion-input placeholder="Greg" [(ngModel)]='questInput'></ion-input>
+        <ion-button (click)="submitClicked()">Submit</ion-button>
+    </ion-item>
+</ion-content>

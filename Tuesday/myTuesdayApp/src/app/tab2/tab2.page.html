@@ -7,26 +7,13 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-item>
-        <ion-checkbox color="dark"  slot="start"></ion-checkbox>
-        <ion-label>Go for run</ion-label>
-    </ion-item>
-    <ion-item>
-        <ion-checkbox color="dark"  slot="start"></ion-checkbox>
-        <ion-label>Wash the dishes</ion-label>
-    </ion-item>
-    <ion-item>
-        <ion-checkbox color="dark"  slot="start"></ion-checkbox>
-        <ion-label>Workout</ion-label>
-    </ion-item>
-    <ion-item>
-        <ion-checkbox color="dark"  slot="start"></ion-checkbox>
-        <ion-label>Mow the lawn</ion-label>
-    </ion-item>
-    <ion-item>
-        <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
-        <ion-label>Rick roll someone</ion-label>
-    </ion-item>
+  <ion-list>
+    <div *ngFor="let item of quests">
+      <app-quest-container [checked]="item.checked" [quest]="item.title"></app-quest-container>
+    </div>
+  </ion-list>
 </ion-content>
-<ion-button expand="block" style="width: 50%; align-self: center;">Add Quest</ion-button>
+
+
+<ion-button (click)="showModal()" expand="block" style="width: 50%; align-self: center;">Add Quest</ion-button>
 

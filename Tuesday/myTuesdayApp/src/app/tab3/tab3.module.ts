@@ -7,9 +7,11 @@ import { Tab3Page } from './tab3.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
+import { SettingsComponentModule } from '../modal/settings.module';
 
 @NgModule({
   imports: [
+    SettingsComponentModule,
     IonicModule,
     CommonModule,
     FormsModule,
